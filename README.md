@@ -31,12 +31,33 @@ git clone https://github.com/yourusername/whist-mate-free.git
 # Install dependencies
 npm install
 
+# Setup environment variables (optional)
+cp .env.example .env
+# Edit .env with your Pro version URLs
+
 # Start development server
 npm run dev
 
 # Build for production
 npm run build
 ```
+
+## ⚙️ Environment Variables
+
+Create a `.env` file based on `.env.example` to configure Pro version upgrade links:
+
+```bash
+# Pro version URLs
+VITE_PRO_PLAY_STORE_URL=https://play.google.com/store/apps/details?id=com.arkhedea.whistmate.pro
+VITE_PRO_MS_STORE_URL=ms-windows-store://pdp/?productid=YOUR_PRODUCT_ID
+VITE_PRO_WEB_URL=https://your-pro-landing-page.com
+
+# Pricing
+VITE_PRO_PRICE=4.99
+VITE_PRO_CURRENCY=USD
+```
+
+All variables are optional. If not set, upgrade buttons will be hidden or use default values.
 
 ## 🎮 How to Play
 

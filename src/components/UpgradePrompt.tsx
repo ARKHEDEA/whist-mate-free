@@ -24,7 +24,7 @@ export function UpgradePrompt({ featureName, onUpgrade }: UpgradePromptProps) {
           onClick={onUpgrade}
           className="bg-gradient-to-r from-yellow-500 to-orange-500 text-black font-bold hover:from-yellow-400 hover:to-orange-400"
         >
-          Obține PRO - $4.99
+          Obține PRO - ${import.meta.env.VITE_PRO_PRICE || '4.99'}
         </Button>
       </div>
     </Card>
