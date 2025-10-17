@@ -1,14 +1,14 @@
 {
   "name": "Whist Mate Free",
   "short_name": "WhistMate",
-  "start_url": ".",
+  "start_url": "/whist-mate-free/",
   "display": "standalone",
   "background_color": "#0b1220",
   "theme_color": "#0f172a",
   "icons": [
-    { "src": "icons/icon-192.png",    "sizes": "192x192", "type": "image/png" },
-    { "src": "icons/icon-512.png",    "sizes": "512x512", "type": "image/png" },
-    { "src": "icons/maskable-192.png","sizes": "192x192", "type": "image/png", "purpose": "maskable" },
-    { "src": "icons/maskable-512.png","sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  { "src": "/whist-mate-free/icons/icon-192.png",    "sizes": "192x192", "type": "image/png" },
+  { "src": "/whist-mate-free/icons/icon-512.png",    "sizes": "512x512", "type": "image/png" },
+  { "src": "/whist-mate-free/icons/maskable-192.png","sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+  { "src": "/whist-mate-free/icons/maskable-512.png","sizes": "512x512", "type": "image/png", "purpose": "maskable" }
   ]
 }
