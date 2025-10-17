@@ -17,13 +17,13 @@ export default defineConfig({
         theme_color: '#0f172a',
         background_color: '#0b1220',
         display: 'standalone',
-        start_url: '/',
-        scope: '/',
+        start_url: '/whist-mate-free/',
+        scope: '/whist-mate-free/',
         icons: [
-          { src: '/icons/icon-192.png', sizes: '192x192', type: 'image/png' },
-          { src: '/icons/icon-512.png', sizes: '512x512', type: 'image/png' },
-          { src: '/icons/maskable-192.png', sizes: '192x192', type: 'image/png', purpose: 'maskable' },
-          { src: '/icons/maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }
+          { src: '/whist-mate-free/icons/icon-192.png', sizes: '192x192', type: 'image/png' },
+          { src: '/whist-mate-free/icons/icon-512.png', sizes: '512x512', type: 'image/png' },
+          { src: '/whist-mate-free/icons/maskable-192.png', sizes: '192x192', type: 'image/png', purpose: 'maskable' },
+          { src: '/whist-mate-free/icons/maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }
         ]
       },
       workbox: {
