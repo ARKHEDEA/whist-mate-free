@@ -7,7 +7,7 @@ import './index.css'
 
 function App() {
   return (
-    <Router>
+    <Router basename="/whist-mate-free">
       <Routes>
         <Route path="/" element={<StartPage />} />
         <Route path="/setup" element={<SetupPage />} />
