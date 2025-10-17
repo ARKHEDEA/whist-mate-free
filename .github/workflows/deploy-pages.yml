@@ -33,6 +33,11 @@ jobs:
       - name: Build
         env:
           VITE_APP_VERSION: ${{ github.sha }}
+          VITE_PRO_PLAY_STORE_URL: "https://play.google.com/store/apps/details?id=com.arkhedea.whistmate.pro"
+          VITE_PRO_MS_STORE_URL: "ms-windows-store://pdp/?productid=9NBLGGHXXXX"
+          VITE_PRO_WEB_URL: "https://arkhedea.github.io/whist-mate-free/"
+          VITE_PRO_PRICE: "4.99"
+          VITE_PRO_CURRENCY: "USD"
         run: npm run build --if-present
 
       - name: Upload artifact
