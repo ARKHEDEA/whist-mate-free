@@ -8,7 +8,13 @@ export default defineConfig({
         react(),
         VitePWA({
             registerType: 'autoUpdate',
-            includeAssets: ['favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
+            injectRegister: 'auto',
+            includeAssets: [
+                'favicon.ico',
+                'robots.txt',
+                'icons/icon-192.png',
+                'icons/icon-512.png'
+            ],
             manifest: {
                 name: 'Whist Mate Free',
                 short_name: 'WhistMate',
@@ -19,14 +25,11 @@ export default defineConfig({
                 start_url: '/whist-mate-free/',
                 scope: '/whist-mate-free/',
                 icons: [
-                    { src: '/whist-mate-free/icons/icon-192.png', sizes: '192x192', type: 'image/png' },
-                    { src: '/whist-mate-free/icons/icon-512.png', sizes: '512x512', type: 'image/png' },
-                    { src: '/whist-mate-free/icons/maskable-192.png', sizes: '192x192', type: 'image/png', purpose: 'maskable' },
-                    { src: '/whist-mate-free/icons/maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }
+                    { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' },
+                    { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' },
+                    { src: 'icons/maskable-192.png', sizes: '192x192', type: 'image/png', purpose: 'maskable' },
+                    { src: 'icons/maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' }
                 ]
-            },
-            workbox: {
-                globPatterns: ['**/*.{js,css,html,png,svg,ico,woff2,ttf}']
             }
         })
     ],
