@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Button, Card } from '../components/ui'
+import { UpgradePrompt } from '../components/UpgradePrompt'
 
 type GameType = '11-88-11' | '88-11-88'
 
@@ -19,6 +20,13 @@ export default function SetupPage() {
     
     localStorage.setItem('whist:gameConfig', JSON.stringify(gameConfig))
     navigate('/players')
+  }
+
+  const handleUpgrade = () => {
+    const proUrl = import.meta.env.VITE_PRO_WEB_URL || import.meta.env.VITE_PRO_PLAY_STORE_URL
+    if (proUrl) {
+      window.open(proUrl, '_blank')
+    }
   }
 
   return (
@@ -73,12 +81,10 @@ export default function SetupPage() {
             </div>
 
             {/* Free Version Notice */}
-            <div className="bg-gray-700 p-3 rounded-lg">
-              <p className="text-sm text-gray-300">
-                <strong>Versiunea gratuită:</strong> Joc simplu fără sistem de premiere.
-                Pentru funcții avansate (premiere, notificări, podium), vezi versiunea Pro.
-              </p>
-            </div>
+            <UpgradePrompt 
+              featureName="Sistem de premiere și funcții avansate"
+              onUpgrade={handleUpgrade}
+            />
           </div>
 
           <div className="flex gap-4 mt-8">
